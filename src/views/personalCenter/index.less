@@ -1,0 +1,898 @@
+input {
+     outline: none;
+     &:focus {
+          border: 1px solid #418EFA!important;
+     }
+}
+
+.fl {
+     float: left;
+}
+
+.fr {
+     float: right;
+}
+
+.center {
+     width: 1200px;
+     background: #fff;
+     margin: 0 auto;
+     padding-bottom: 70px;
+}
+
+.head {
+     width: 100%;
+     height: 125px;
+     background: #fff;
+     margin-bottom: 31px;
+     img {
+          width: 80px;
+          height: 80px;
+          padding: 23.7px 0 0 85px;
+          margin-right: 55.5px;
+     }
+     p {
+          font-family: 'PingFangTC-Semibold', '微软雅黑';
+          font-size: 22px;
+          color: #646464;
+          text-align: center;
+          line-height: 125px;
+          span {
+               color: #4690FA;
+          }
+     }
+}
+
+.content {
+     height: 600px;
+     padding-top: 60px;
+     background: #FFFFFF;
+     box-shadow: inset 0 1px 3px 0 rgba(203, 203, 203, 0.50); // 左边tab
+     >div:first-child {
+          ul {
+               margin-left: 50px;
+               padding-right: 50px;
+               height: 540px;
+               box-shadow: inset -1px 0px 0 rgba(197, 197, 197, 0.50);
+               ; //左边阴影
+               margin-right: 8px;
+               li {
+                    width: 170px;
+                    height: 46px;
+                    margin-bottom: 34px;
+                    font-family: 'PingFangTC-Semibold', '微软雅黑';
+                    font-size: 16px;
+                    color: #555555;
+                    text-align: center;
+                    line-height: 46px;
+                    cursor: pointer;
+                    &.hover {
+                         background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                         box-shadow: 0 2px 4px 0 rgba(162, 162, 162, 0.50);
+                         border-radius: 5px;
+                         color: #fff;
+                    }
+               }
+          }
+     } // 
+     >div:last-child {
+          margin-left: 60px; // 我的账号
+          // 我的账号
+          >div:nth-child(1) {
+               // 未绑定账号
+               >div:first-child {
+                    // 标题
+                    >p:first-child {
+                         font-family: 'PingFangTC-Semibold', '微软雅黑';
+                         font-size: 18px;
+                         color: #555555;
+                         line-height: 25px;
+                         margin-bottom: 75px;
+                    } // 表单
+                    >div {
+                         width: 797px;
+                         height: 40px;
+                         overflow: hidden;
+                         margin-bottom: 18px; // 以太坊账号
+                         &:nth-child(3) {
+                              margin-bottom: 105px;
+                         }
+                         img {
+                              margin-right: 46px;
+                              width: 21px;
+                         }
+                         p {
+                              width: 730px;
+                              height: 39px;
+                              border-bottom: 1px solid rgba(197, 197, 197, 0.50);
+                              font-family: 'PingFangTC-Medium', '微软雅黑';
+                              font-size: 14px;
+                              color: #555555;
+                              span:first-child {
+                                   margin-right: 184px;
+                                   width: 80px;
+                                   display: inline-block;
+                              }
+                              input {
+                                   border: 0;
+                                   width: 200px;
+                                   padding: 5px 10px;
+                                   border-radius: 5px;
+                                   &:focus{
+                                        border: 0;
+                                   }
+                              }
+                         } // 按钮
+                         &.button {
+                              text-align: center;
+                              width: 365px;
+                              height: 45px;
+                              margin: 0 auto;
+                              background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                              box-shadow: 0 2px 4px 0 rgba(162, 162, 162, 0.50);
+                              border-radius: 5px;
+                              border: 0;
+                              outline: none;
+                              font-family: 'PingFangTC-Semibold', '微软雅黑';
+                              font-size: 16px;
+                              color: #FFFFFF;
+                              line-height: 45px;
+                              text-align: center;
+                              cursor: pointer;
+                         }
+                    }
+               } // 绑定前和绑定后
+               >div:nth-child(2) {
+                    width: 781px;
+                    >p:first-child {
+                         font-family: 'PingFangTC-Semibold';
+                         font-size: 18px;
+                         color: #555555;
+                         line-height: 25px;
+                         margin-bottom: 39px;
+                    } // 警告让那个绑定账号
+                    >div:nth-child(2) {
+                         height: 35px;
+                         img {
+                              width: 28px;
+                              height: 28px;
+                              margin-right: 15px;
+                         }
+                         span {
+                              font-family: 'PingFangTC-Semibold', '微软雅黑';
+                              font-size: 16px;
+                              color: #555555;
+                              line-height: 25px;
+                         }
+                         div {
+                              width: 120px;
+                              height: 35px;
+                              line-height: 35px;
+                              background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                              box-shadow: 0 2px 4px 0 rgba(162, 162, 162, 0.50);
+                              border-radius: 5px;
+                              text-align: center;
+                              color: #fff;
+                              cursor: pointer;
+                         }
+                    } // 显示平台币
+                    >div:nth-child(3) {
+                         padding-top: 77px;
+                         overflow: hidden;
+                         margin-bottom: 80px;
+                         >div:nth-child(1) {
+                              width: 525px;
+                              height: 182px;
+                              background: #FFFFFF;
+                              //box-shadow: inset 0px 0px 3px 0 rgba(203, 203, 203, 0.50);
+                              border-radius: 5px;
+                              img {
+                                   padding: 60px 0px 0 55px;
+                              }
+                              >div {
+                                   width: 360px;
+                                   padding-top: 30px;
+                                   text-align: center;
+                                   p:nth-child(1) {
+                                        font-family: 'PingFangTC-Semibold', '微软雅黑';
+                                        font-size: 18px;
+                                        color: #555555;
+                                        line-height: 25px;
+                                        margin-bottom: 24px;
+                                   }
+                                   p:nth-child(2) {
+                                        font-family: 'PingFangTC-Medium', '微软雅黑';
+                                        font-size: 45px;
+                                        line-height: 63px;
+                                        color: #535353;
+                                   }
+                              }
+                         }
+                         >div:nth-child(2) {
+                              div {
+                                   width: 120px;
+                                   height: 35px;
+                                   border-radius: 5px;
+                                   line-height: 35px;
+                                   text-align: center;
+                                   font-family: 'PingFangTC-Semibold', '微软雅黑';
+                                   font-size: 16px;
+                                   color: #FFFFFF;
+                                   cursor: pointer;
+                              }
+                              div:nth-child(1) {
+                                   background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                                   box-shadow: 0 2px 4px 0 rgba(162, 162, 162, 0.50);
+                                   margin-bottom: 50px;
+                                   margin-top: 23px;
+                              }
+                              div:nth-child(2) {
+                                   background: #FFFFFF;
+                                   box-shadow: 0 2px 4px 0 rgba(162, 162, 162, 0.50);
+                                   border-radius: 5px;
+                                   color: #3885F9;
+                              }
+                         }
+                    } // 底
+                    >p:nth-child(4) {
+                         font-family: 'PingFangTC-Medium', '微软雅黑';
+                         font-size: 14px;
+                         color: #555555;
+                         line-height: 20px;
+                    }
+               } 
+               // 兑换
+               >div:nth-child(3) {
+                    font-family: 'PingFangTC-Medium', '微软雅黑';
+                    font-size: 14px;
+                    color: #555555;
+                    line-height: 20px;
+                    .marginL10{
+                          margin-left: 8px;
+                          display: inline-block;
+
+                    }
+                    p:nth-child(1) {
+                         font-family: 'PingFangTC-Semibold', '微软雅黑';
+                         font-size: 18px;
+                         line-height: 25px;
+                         margin-bottom: 30px;
+                    }
+                    p:nth-child(2) {
+                         margin-bottom: 25px;
+                    }
+                    p:nth-child(3) {
+                         margin-bottom: 35px;
+                    }
+                    div:nth-child(4) {
+                         margin-bottom: 35px;
+                         line-height: 35px;
+                         input {
+                              outline: none;
+                              border: 1px solid #979797;
+                              border-radius: 5px;
+                              margin: 0 10px 0 10px;
+                              width: 400px;
+                              height: 35px;
+                              padding-left: 10px;
+                         }
+                         span {
+                              //display: inline-block;
+                              //width: 111px;
+                              //height: 35px;
+                              //background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                              //border-radius: 5px;
+                              //text-align: center;
+                              //color: #fff;
+                              //cursor: pointer;
+                              //border: 0;
+                         }
+                    }
+                    p:nth-child(6) {
+                         padding: 15px 0 93px 0;
+                         color: #9B9B9B;
+                    }
+                    div:last-child {
+                         //width: 265px;
+                         //height: 35px;
+                         //line-height: 35px;
+                         //text-align: center;
+                         //background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                         //box-shadow: 0 2px 4px 0 rgba(162, 162, 162, 0.50);
+                         //border-radius: 5px;
+                         //font-size: 16px;
+                         //color: #FFFFFF;
+                         //cursor: pointer;
+                    }
+                    div.bottom_btn {
+                         width: 265px;
+                         height: 35px;
+                         line-height: 35px;
+                         text-align: center;
+                         background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                         box-shadow: 0 2px 4px 0 rgba(162, 162, 162, 0.50);
+                         border-radius: 5px;
+                         font-size: 16px;
+                         color: #FFFFFF;
+                         cursor: pointer;
+                    }
+                    .accoutname{
+                         background-image: none;
+                         display: block;
+                         width: 265px;
+                         height: 35px;
+                         line-height: 35px;
+                         div{
+                              background-image: none;
+                              background-color: white;
+                              color: black;
+                         }
+                    }
+                    .exchange-num{
+                         padding: 10px 5px 10px 0;
+                         .exchange-list{
+                              display: inline-block;
+                              width: 700px;
+                              vertical-align: middle;
+                              li{
+                                   display: inline-block;
+                                   width: 200px;
+                                   height: 35px;
+                                   padding: 0 10px;
+                              }
+                         }
+                         .othernum{
+                              display: block;
+                              input{
+                                   outline: none;
+                                   border: 1px solid #979797;
+                                   border-radius: 5px;
+                                   margin: 0 10px 0 6px;
+                                   width: 400px;
+                                   height: 35px;
+                                   padding-left: 10px;
+                              }
+                         }
+                         .exchange-num-top{
+                              display: inline-block;
+                              vertical-align: middle;
+                              // height: 70px;
+                              // line-height: 60px;
+                              height: 72px;
+                              line-height: 68px;
+                         }
+                    }
+                    .available-num{
+                         display: block;
+                         width: 265px;
+                         height: 35px;
+                         line-height: 35px;
+                    }
+                    .payment{
+                         display: block;
+                         width: 400px;
+                    }
+               } //提现
+               >div:nth-child(4) {
+                    font-family: 'PingFangTC-Medium', '微软雅黑';
+                    font-size: 14px;
+                    color: #555555;
+                    line-height: 20px;
+                    >p {
+                         margin-bottom: 40px;
+                         span:first-child {
+                              display: inline-block;
+                              width: 84px;
+                              margin-right: 60px;
+                         }
+                    }
+                    >p:first-child {
+                         font-family: 'PingFangTC-Semibold', '微软雅黑';
+                         font-size: 18px;
+                         line-height: 25px;
+                         margin-bottom: 45px;
+                    }
+                    >div:nth-child(4) {
+                         >div {
+                              line-height: 35px;
+                              margin-bottom: 40px;
+                              &:last-child {
+                                   margin-bottom: 60px;
+                                   input {
+                                        width: 289px;
+                                   }
+                              }
+                              span {
+                                   display: inline-block;
+                                   width: 70px;
+                                   margin-right: 74px;
+                              }
+                              input {
+                                   width: 470px;
+                                   height: 35px;
+                                   padding-left: 10px;
+                                   border: 1px solid #979797;
+                                   border-radius: 5px;
+                              }
+                              img {
+                                   width: 145px;
+                                   height: 35px;
+                              }
+                         }
+                    }
+                    >div:last-child {
+                         margin-left: 343px;
+                         width: 265px;
+                         height: 35px;
+                         line-height: 35px;
+                         background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                         box-shadow: 0 2px 4px 0 rgba(162, 162, 162, 0.50);
+                         border-radius: 5px;
+                         font-size: 16px;
+                         color: #FFFFFF;
+                         text-align: center;
+                         cursor: pointer;
+                    }
+               }
+          }
+          // 我的应用
+          >div:nth-child(2) {
+               width: 844px;
+               >p:first-child {
+                    font-family: 'PingFangTC-Semibold', '微软雅黑';
+                    font-size: 18px;
+                    color: #555555;
+                    line-height: 25px;
+                    margin-bottom: 50px;
+               } // 列表
+               ul {
+                    width: 100%;
+                    margin-bottom: 32px;
+                    overflow: hidden;
+                    li {
+                         width: 156px;
+                         height: 75px;
+                         margin-right: 54px;
+                         margin-bottom: 60px;
+                         font-family: 'PingFangTC-Medium';
+                         img {
+                              width: 75px;
+                              height: 75px;
+                              padding-right: 11px;
+                         }
+                         >div {
+                              p:first-child {
+                                   font-size: 16px;
+                                   color: #555555;
+                                   line-height: 22px;
+                                   margin-bottom: 23px;
+                                   display: inline-block;
+                                   width: 60px;
+                                   height: 20px;
+                                   overflow:hidden; 
+                                     
+                                    word-wrap: break-word;
+                                    word-break: normal;
+                              }
+                              p:last-child {
+                                   width: 70px;
+                                   height: 24px;
+                                   line-height: 24px;
+                                   text-align: center;
+                                   font-size: 12px;
+                                   color: #418EFB;
+                                   background: #F0F0F7;
+                                   border-radius: 16.5px;
+                                   cursor: pointer;
+                              }
+                         }
+                    }
+               }
+               >div {
+                    width: 500px;
+                    height: 30px;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-family: 'PingFangTC-Medium', '微软雅黑';
+                    font-size: 12px;
+                    color: #555555;
+                    line-height: 30px;
+               }
+          }
+          // 账号安全
+          >div:nth-child(3) {
+               // 账号安全主页
+               >div:first-child {
+                    width: 797px;
+                    font-family: 'PingFangTC-Medium', '微软雅黑';
+                    font-size: 14px;
+                    color: #555555;
+                    line-height: 20px;
+                    >p:first-child {
+                         font-family: 'PingFangTC-Semibold', '微软雅黑';
+                         font-size: 18px;
+                         margin-bottom: 45px;
+                    }
+                    >div {
+                         width: 100%;
+                         overflow: hidden;
+                         margin-bottom: 26px;
+                         img {
+                              width: 21px;
+                         }
+                         p {
+                              width: 730px;
+                              margin-left: 46px;
+                              border-bottom: 1px solid rgba(197, 197, 197, 0.50);
+                              padding-bottom: 19px;
+                              span:first-child {
+                                   width: 70px;
+                                   display: inline-block;
+                                   margin-right: 155px;
+                              }
+                              .modio {
+                                   display: inline-block;
+                                   width: 161px;
+                                   text-align: center;
+                              }
+                              .button {
+                                   margin-right: 40px;
+                                   color: #3F8CFA;
+                                   cursor: pointer;
+                              }
+                         }
+                    }
+               }
+               // 交易密码设置
+               >div:nth-child(2){
+                    font-family: 'PingFangTC-Medium', '微软雅黑';
+                    color: #555555;
+                    font-size: 14px;
+                    >p{
+                         font-family: 'PingFangTC-Semibold', '微软雅黑';
+                         font-size: 18px;
+                         line-height: 25px;
+                         margin-bottom: 85px;
+                    }
+                    >div{
+                         margin-left: 218px;
+                         p{
+                              line-height: 20px;
+                              margin-bottom: 15px;
+                         }
+                         input{
+                              width: 365px;
+                              height: 45px;
+                              border: 1px solid #979797;
+                              border-radius: 5px;
+                              line-height: 45px;
+                              margin-bottom: 25px;
+                              padding-left: 10px;
+                         }
+                         div{
+                              width: 365px;
+                              height: 45px;
+                              background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                              box-shadow: 0 2px 4px 0 rgba(162,162,162,0.50);
+                              border-radius: 5px;
+                              font-size: 16px;
+                              color: #FFFFFF;
+                              text-align: center;
+                              line-height: 45px;
+                              cursor: pointer;
+                         }
+                    }
+               }
+               // 修改交易密码
+               >div:nth-child(3){
+                    font-family: 'PingFangTC-Semibold', '微软雅黑';
+                    font-size: 14px;
+                    color: #555555;
+                    line-height: 20px;
+                    >p:first-child{
+                         font-size: 18px;
+                         line-height: 25px;
+                         margin-bottom: 37px;
+                    }
+                    >div{
+                         // tab
+                         .top{
+                              width: 752px;
+                              height: 39px;
+                              border-bottom: 1px solid rgba(197,197,197,0.50);
+                              font-size: 16px;
+                              line-height: 22px;
+                              //margin-bottom: 46px;
+                              div:nth-child(2),  div:nth-child(3){
+                                   cursor: pointer;
+                                   padding: 0 22px 12px 22px;
+                                   position: relative;
+                                   &.hover{
+                                        color: #3E8BFA;
+                                        p{
+                                             width: 100%;
+                                             height: 5px;
+                                             position: absolute;
+                                             left: 0;
+                                             bottom: -5px;
+                                             border-radius: 5px;
+                                             background: #3E8BFA;
+                                        }
+                                   }
+                              }
+                              div:nth-child(2){
+                                   margin-left: 100px;
+                                   margin-right: 181px;
+                              }
+                         }
+                         .bottom{
+                              margin-left: 218px;
+                              padding-top: 20px;
+                              input{
+                                   width: 355px;
+                                   height: 45px;
+                                   line-height: 45px;
+                                   border: 1px solid #979797;
+                                   border-radius: 5px;
+                                   margin-bottom: 25px;
+                                   padding-left: 10px;
+                              }
+                              // 修改密码
+                              >div:first-child{
+                                   p{
+                                        margin-bottom: 10px;
+                                   }
+                              }
+                              >div:nth-child(2) {
+                                    p:first-child{
+                                         margin-bottom: 20px;
+                                    }
+                                    p:nth-child(2){
+                                         margin-bottom: 10px;
+                                    }
+                              }
+                              // button
+                              >div:last-child{
+                                   width: 365px;
+                                   height: 45px;
+                                   line-height: 45px;
+                                   background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                                   box-shadow: 0 2px 4px 0 rgba(162,162,162,0.50);
+                                   border-radius: 5px;
+                                   font-size: 16px;
+                                   color: #FFFFFF;
+                                   text-align: center;
+                                   cursor: pointer;
+                                   margin-top: 25px;
+                              }
+                         }
+                    }
+               }
+               // 修改登陆密码
+               >div:nth-child(4) {
+                    font-family: 'PingFangTC-Semibold', '微软雅黑';
+                    font-size: 14px;
+                    color: #555555;
+                    line-height: 20px;
+                    >p{
+                         font-size: 18px;
+                         line-height: 25px;
+                         margin-bottom: 60px;
+                         margin-bottom: 60px;
+                    }
+                    >div{
+                         margin-left: 219px;
+                         p{
+                              margin-bottom: 10px;
+                         }
+                         input{
+                              width: 355px;
+                              height: 45px;
+                              border: 1px solid #979797;
+                              border-radius: 5px;
+                              margin-bottom: 25px;
+                              line-height: 45px;
+                              padding-left: 10px;
+                         }
+                         div{
+                              font-family: 'PingFangTC-Medium', '微软雅黑';
+                              margin-top: 25px;
+                              background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                              box-shadow: 0 2px 4px 0 rgba(162,162,162,0.50);
+                              border-radius: 5px;
+                              width: 365px;
+                              height: 45px;
+                              line-height: 45px;
+                              text-align: center;
+                              color: #fff;
+                              font-size: 16px;
+                              cursor: pointer;
+                         }
+                    }
+               }
+          }
+          // 我的消息
+          >div:nth-child(4){
+              >p{
+                    font-family: 'PingFangTC-Semibold', '微软雅黑';
+                    font-size: 18px;
+                    color: #555555;
+                    line-height: 25px;
+                    margin-bottom: 45px;
+              }
+              ul{
+                   width: 793px;
+                   li{
+                        width: 793px;
+                        height: 95px;
+                        margin-bottom: 31px;
+                    //     margin-bottom: 50px;
+                        &:last-child{
+                              div:last-child{
+                                    border-bottom: 0;
+                              }
+                        }
+                        div:first-child{
+                             width: 19px;
+                             height: 19px;
+                             img{
+                                  width: 100%;
+                                  height: 100%;
+                             }
+                        }
+                        div:last-child{
+                             width: 751px;
+                             height:  94px;
+                             border-bottom:1px solid rgba(197,197,197,0.50);
+                             p:first-child{
+                                   font-family: 'PingFangTC-Semibold', '微软雅黑';
+                                   font-size: 14px;
+                                   color: #555555;
+                                   line-height: 20px;
+                                   margin-bottom: 10px;
+                             }
+                             p:last-child{
+                                  font-family: 'PingFangTC-Medium', '微软雅黑';
+                                  font-size: 12px;
+                                  color: #999999;
+                                  line-height: 17px;
+                             }
+                        }
+                   }
+              }
+              >div:last-child{
+                   text-align: center;
+                   >div{
+                        display: inline-block;
+                         >span{
+                              font-family: 'PingFangTC-Medium', '微软雅黑';
+                              font-size: 14px;
+                              color: #555555;
+                              line-height: 30px;
+                         }
+                   }
+              }
+          }
+          // 交易明细
+          >div:nth-child(5) {
+               width: 787px;
+               font-family: 'PingFangTC-Semibold', '微软雅黑';
+               color: #555555;
+              >p{
+                   font-size: 18px;
+                   line-height: 25px;
+                   margin-bottom: 32px;
+              }
+              .top{
+                   width: 100%;
+                   height: 35px;
+                   font-size: 16px;
+                   line-height: 35px;
+                   margin-bottom: 40px;
+                   span:first-child{
+                        margin-left: 68px;
+                   }
+                   span:last-child{
+                        margin-right: 30px;
+                        width: 120px;
+                        height: 35px;
+                        background-image: linear-gradient(90deg, #69B7FF 0%, #2672F7 100%);
+                        box-shadow: 0 2px 4px 0 rgba(162,162,162,0.50);
+                        border-radius: 5px;
+                        color: #fff;
+                        text-align: center;
+                        cursor: pointer;
+                   }
+                   span:nth-child(2) {
+                        margin-right: 178px;
+                        width: 120px;
+                        height: 35px;
+                        background: #FFFFFF;
+                        box-shadow: 0 2px 4px 0 rgba(162,162,162,0.50);
+                        border-radius: 5px;
+                        color: #3885F9;
+                        text-align: center;
+                        cursor: pointer;
+                   }
+              }
+              .bottom{
+                   table{
+                        border-collapse: collapse;
+                        font-size: 14px;
+                        line-height: 43px;
+                        color: #555555;
+                        margin-bottom: 27px;
+                        thead{
+                              background-image: linear-gradient(-180deg, #FFFFFF 13%, #C2C2C2 100%);
+                        }
+                        th,td{
+                              width: 156px;
+                              height: 43px;
+                              text-align: center;
+                              border-left: 1px solid #CBCBCB;
+                              border-top: 1px solid #CBCBCB;
+                              &:last-child{
+                                   border-right: 1px solid #CBCBCB;
+                              }
+                         }
+                         tbody{
+                            border-bottom: 1px solid #CBCBCB;  
+                         }
+                   }
+                   >div{
+                        text-align: center;
+                        >div{
+                             display: inline-block;
+                             >span{
+                                  font-family: 'PingFangTC-Medium', '微软雅黑';
+                                  font-size: 14px;
+                                  color: #555555;
+                                  line-height: 30px;
+                             }
+                        }
+                   }
+              }
+          }
+     }
+}
+.checksafaQA{
+     width: 80%;
+     font-size: 12px;
+     padding-top: 20px;
+     text-align: right;
+     color: #3E8BFA;
+     cursor: pointer;
+     display: block;
+}
+.marginB10{
+     margin-bottom: 10px;
+}
+.bottom-space {
+     height: 40px;
+     width: 100%;
+}
+.exchange-num{
+      
+      .width90{
+            width: 90px;
+            text-align: left;
+      }
+      .el-radio-group{
+            width: 340px;
+            margin: 10px 0;
+            margin-left: 6px;
+            .el-radio+.el-radio {
+                  margin-left: 0px;
+                  padding: 10px 0px;
+                  
+                  //     padding: 0 10px 0;
+            }
+            .el-radio{
+                  margin-right: 20px
+            }
+            .marginL10{
+                  margin-left: 10px;
+                  display:inline-block
+            }
+      }
+}

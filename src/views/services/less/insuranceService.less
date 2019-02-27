@@ -1,0 +1,158 @@
+@import '~@res/css/commin.less';
+.ggg_user{
+    color: rgba(102,102,102,1);
+    h2{
+        font: normal @font24/100px @Adobe;
+    }
+    p{
+        font: 400 @font14/40px @Microsoft;
+    }
+    
+}
+.banner{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 70px;
+    .left{
+        position: absolute;
+        left: 153px;
+        top: 33%;
+        p{
+            font: bold @font42/50px @Noto;
+            color: #000;
+        }
+        P:first-child{
+            color: #F2284A;
+            font-size: @font20;
+            line-height: 40px;
+        }
+    }
+    .right{
+        width: 900px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.Insurance{
+    width: 100%;
+    height: 651px;
+    margin-bottom: 92px;
+    .left{
+        padding-top: 211px;
+        padding-left: 31px;
+        width:437px;
+    }
+    .right{
+        width: 728px;
+        height: 650px;
+        position: relative;
+        img:first-child{
+            width: 382px;
+            height: 651px;
+        }
+        img:last-child{
+            width: 443px;
+            height: 461px;
+            position: absolute;
+            right: 4px;
+            top: 101px;
+        }
+    }
+}
+
+.capture{
+    width: 100%;
+    height: 661px;
+    margin-bottom: 97px;
+    .left{
+        img{
+            width: 639px;
+            height: 661px;
+        }
+        
+    }
+    .right{
+        padding-top: 215px;
+        width: 414px;
+        padding-left: 26px;
+    }
+
+}
+
+.type_insurance{
+    width: 100%;
+    height: 648px;
+    background: url('../images/baox_bjt.png') no-repeat center;
+    position: relative;
+    margin-bottom:100px;
+    .topTittle,.bottomTittle {
+        position: absolute;
+        font: @font24 @Adobe;
+    }
+    .topTittle{
+        top: -12px;
+        right: 261px;
+    }
+    .bottomTittle{
+        bottom: -12px;
+        left: 261px;
+    }
+    .content{
+        width:100%;
+        overflow: hidden;
+        .img{
+            padding-top: 59px;
+            width: 2000%;
+            position: relative;
+            overflow: hidden;
+            dl{
+                width: 367px;
+                height: 529px;
+                margin-right:48px;
+                dt{
+                    width: 100%;
+                    height: 441px;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 441px;
+                    }
+                    p{
+                        width: 100%;
+                        height: 529px;
+                        position: absolute;
+                        background: #666666;
+                        opacity: 0.8;
+                        top: 0;
+                        left: 0;
+                        font: 400 @font24/529px @Microsoft;
+                        text-align: center;
+                        color: #fff;
+                        display: none;
+                    }
+                }
+                dd{
+                    width: 100%;
+                    height: 88px;
+                    background: #fff;
+                    font: 400 @font20/88px @Microsoft;
+                    padding-left: 16px;
+                }
+                &:hover{
+                    dt{
+                        p{
+                            display: block;
+                        }
+                        img{
+                            height:529px;
+                        }
+                    }
+                    dd{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
